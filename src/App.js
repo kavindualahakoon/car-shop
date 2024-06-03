@@ -61,11 +61,11 @@ function App() {
 
   console.log(myDataState);
 
-  const mainBlock =  myDataState.map(({name, city, image, position, id})=>{
+  const mainBlock =  myDataState.map(({name, city, image, position, id}, index)=>{
     // return <p>{ele.name}</p>;
     return (
     <Main 
-    key={id}
+    key={id + index}
     name={name} 
     city={city} 
     position={position} 
@@ -100,3 +100,4 @@ function App() {
   );
 } 
 export default App;
+//03:48:31
